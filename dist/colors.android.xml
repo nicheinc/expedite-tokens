@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
+  <color name="COLOR_NAVY01 &apos;#114DA5&apos;" category="background-color">#ff114da5</color>
+  <color name="COLOR_NAVY02 &apos;#1956DD&apos;" category="background-color">#ff1956dd</color>
+  <color name="COLOR_NAVY03 &apos;#4A7AE6&apos;" category="background-color">#ff4a7ae6</color>
+  <color name="COLOR_NAVY04 &apos;#7B9FEE&apos;" category="background-color">#ff7b9fee</color>
+  <color name="COLOR_NAVY05 &apos;#ABC3F7&apos;" category="background-color">#ffabc3f7</color>
+  <color name="COLOR_NAVY06 &apos;#DCE7FF&apos;" category="background-color">#ffdce7ff</color>
   <color name="COLOR_PURPLE_TEXT" category="text-color">#ff50495a</color>
   <color name="COLOR_PURPLE_DARKER" category="background-color">#ff230051</color>
   <color name="COLOR_PURPLE_DARK" category="background-color">#ff50248f</color>
@@ -12,50 +18,6 @@
   <color name="COLOR_INDIGO" category="background-color">#ff5c6ac4</color>
   <color name="COLOR_INDIGO_LIGHT" category="background-color">#ffb3bcf5</color>
   <color name="COLOR_INDIGO_LIGHTER" category="background-color">#fff4f5fa</color>
-  <color name="COLOR_BLUE_TEXT" category="text-color">#ff3e4e57</color>
-  <color name="COLOR_BLUE_DARKER" category="background-color">#ff001429</color>
-  <color name="COLOR_BLUE_DARK" category="background-color">#ff084e8a</color>
-  <color name="COLOR_BLUE" category="background-color">#ff006fbb</color>
-  <color name="COLOR_BLUE_LIGHT" category="background-color">#ffb4e1fa</color>
-  <color name="COLOR_BLUE_LIGHTER" category="background-color">#ffebf5fa</color>
-  <color name="COLOR_TEAL_TEXT" category="text-color">#ff405352</color>
-  <color name="COLOR_TEAL_DARKER" category="background-color">#ff003135</color>
-  <color name="COLOR_TEAL_DARK" category="background-color">#ff00848e</color>
-  <color name="COLOR_TEAL" category="background-color">#ff47c1bf</color>
-  <color name="COLOR_TEAL_LIGHT" category="background-color">#ffb7ecec</color>
-  <color name="COLOR_TEAL_LIGHTER" category="background-color">#ffe0f5f5</color>
-  <color name="COLOR_GREEN_TEXT" category="text-color">#ff414f3e</color>
-  <color name="COLOR_GREEN_DARKER" category="background-color">#ff173630</color>
-  <color name="COLOR_GREEN_DARK" category="background-color">#ff108043</color>
-  <color name="COLOR_GREEN" category="background-color">#ff50b83c</color>
-  <color name="COLOR_GREEN_LIGHT" category="background-color">#ffbbe5b3</color>
-  <color name="COLOR_GREEN_LIGHTER" category="background-color">#ffe3f1df</color>
-  <color name="COLOR_YELLOW_TEXT" category="text-color">#ff595130</color>
-  <color name="COLOR_YELLOW_DARKER" category="background-color">#ff573b00</color>
-  <color name="COLOR_YELLOW_DARK" category="background-color">#ff8a6116</color>
-  <color name="COLOR_YELLOW" category="background-color">#ffeec200</color>
-  <color name="COLOR_YELLOW_LIGHT" category="background-color">#ffffea8a</color>
-  <color name="COLOR_YELLOW_LIGHTER" category="background-color">#fffcf1cd</color>
-  <color name="COLOR_ORANGE_TEXT" category="text-color">#ff594430</color>
-  <color name="COLOR_ORANGE_DARKER" category="background-color">#ff4a1504</color>
-  <color name="COLOR_ORANGE_DARK" category="background-color">#ffc05717</color>
-  <color name="COLOR_ORANGE" category="background-color">#fff49342</color>
-  <color name="COLOR_ORANGE_LIGHT" category="background-color">#ffffc58b</color>
-  <color name="COLOR_ORANGE_LIGHTER" category="background-color">#fffcebdb</color>
-  <color name="COLOR_RED_TEXT" category="text-color">#ff583c35</color>
-  <color name="COLOR_RED_DARKER" category="background-color">#ff330101</color>
-  <color name="COLOR_RED_DARK" category="background-color">#ffbf0711</color>
-  <color name="COLOR_RED" category="background-color">#ffde3618</color>
-  <color name="COLOR_RED_LIGHT" category="background-color">#fffead9a</color>
-  <color name="COLOR_RED_LIGHTER" category="background-color">#fffbeae5</color>
-  <color name="COLOR_INK" category="background-color">#ff212b36</color>
-  <color name="COLOR_INK_LIGHT" category="background-color">#ff454f5b</color>
-  <color name="COLOR_INK_LIGHTER" category="background-color">#ff637381</color>
-  <color name="COLOR_INK_LIGHTEST" category="background-color">#ff919eab</color>
-  <color name="COLOR_SKY_DARK" category="background-color">#ffc4cdd5</color>
-  <color name="COLOR_SKY" category="background-color">#ffdfe3e8</color>
-  <color name="COLOR_SKY_LIGHT" category="background-color">#fff4f6f8</color>
-  <color name="COLOR_SKY_LIGHTER" category="background-color">#fff9fafb</color>
   <color name="COLOR_BLACK" category="background-color">#ff000000</color>
   <color name="COLOR_WHITE" category="background-color">#ffffffff</color>
 </resources>

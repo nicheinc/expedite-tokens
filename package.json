@@ -10,7 +10,7 @@
   ],
   "scripts": {},
   "devDependencies": {
-    "gulp": "3.8.0",
+    "gulp": "^4",
     "gulp-load-plugins": "2.0.1",
     "gulp-plumber": "1.2.1",
     "gulp-rename": "1.4.0",
@@ -19,7 +19,8 @@
     "gulp-sourcemaps": "2.6.5",
     "gulp-theo": "2.0.0",
     "lodash": "4.17.15",
-    "theo": "8.1.4"
+    "theo": "8.1.4",
+    "tinycolor2": "1.4.1"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -144,6 +144,7 @@ aliases:
 props:
   - name: navy01
     value: '{!navy01}'
+    comment: 'NAVY'
   - name: navy02
     value: '{!navy02}'
   - name: navy03
@@ -156,6 +157,7 @@ props:
     value: '{!navy06}'
   - name: indigo01
     value: '{!indigo01}'
+    comment: 'INDIGO'
   - name: indigo02
     value: '{!indigo02}'
   - name: indigo03
@@ -168,8 +170,10 @@ props:
     value: '{!indigo06}'
   - name: light-blue-button-hover-background
     value: '{!light-blue-button-hover-background}'
+    comment: '***'
   - name: cyan01
     value: '{!cyan01}'
+    comment: 'CYAN'
   - name: cyan02
     value: '{!cyan02}'
   - name: cyan03
@@ -182,6 +186,7 @@ props:
     value: '{!cyan06}'
   - name: teal01
     value: '{!teal01}'
+    comment: 'TEAL'
   - name: teal02
     value: '{!teal02}'
   - name: teal03
@@ -194,6 +199,7 @@ props:
     value: '{!teal06}'
   - name: turquoise01
     value: '{!turquoise01}'
+    comment: 'TURQUOISE'
   - name: turquoise02
     value: '{!turquoise02}'
   - name: turquoise03
@@ -206,6 +212,7 @@ props:
     value: '{!turquoise06}'
   - name: jade01
     value: '{!jade01}'
+    comment: 'JADE'
   - name: jade02
     value: '{!jade02}'
   - name: jade03
@@ -218,8 +225,10 @@ props:
     value: '{!jade06}'
   - name: green01
     value: '{!green01}'
+    comment: 'GREEN'
   - name: green02
     value: '{!green02}'
+    comment: 'aka "Niche Green"'
   - name: green03
     value: '{!green03}'
   - name: green04
@@ -236,12 +245,15 @@ props:
     value: '{!block-header-green}'
   - name: nav-green
     value: '{!nav-green}'
+    comment: 'Global Nav'
   - name: nav-green-tint
     value: '{!nav-green-tint}'
+    comment: 'Slight tweak on Global Nav green tinted a shade darker'
   - name: notification-green
     value: '{!notification-green}'
   - name: limegreen01
     value: '{!limegreen01}'
+    comment: 'LIMEGREEN'
   - name: limegreen02
     value: '{!limegreen02}'
   - name: limegreen03
@@ -254,6 +266,7 @@ props:
     value: '{!limegreen06}'
   - name: yellow01
     value: '{!yellow01}'
+    comment: 'YELLOW'
   - name: yellow02
     value: '{!yellow02}'
   - name: yellow03
@@ -266,6 +279,7 @@ props:
     value: '{!yellow06}'
   - name: mustard01
     value: '{!mustard01}'
+    comment: 'MUSTARD'
   - name: mustard02
     value: '{!mustard02}'
   - name: mustard03
@@ -278,6 +292,7 @@ props:
     value: '{!mustard06}'
   - name: brown01
     value: '{!brown01}'
+    comment: 'BROWN'
   - name: brown02
     value: '{!brown02}'
   - name: brown03
@@ -290,6 +305,7 @@ props:
     value: '{!brown06}'
   - name: brick01
     value: '{!brick01}'
+    comment: 'BRICK'
   - name: brick02
     value: '{!brick02}'
   - name: brick03
@@ -302,6 +318,7 @@ props:
     value: '{!brick06}'
   - name: red01
     value: '{!red01}'
+    comment: 'RED'
   - name: red02
     value: '{!red02}'
   - name: red03
@@ -314,6 +331,7 @@ props:
     value: '{!red06}'
   - name: fuschia01
     value: '{!fuschia01}'
+    comment: 'FUSCHIA'
   - name: fuschia02
     value: '{!fuschia02}'
   - name: fuschia03
@@ -326,6 +344,7 @@ props:
     value: '{!fuschia06}'
   - name: gray00
     value: '{!gray00}'
+    comment: 'GRAY'
   - name: gray01
     value: '{!gray01}'
   - name: gray02
@@ -354,6 +373,7 @@ props:
     value: '{!gray13}'
   - name: facebook
     value: '{!facebook}'
+    comment: 'SOCIAL MEDIA COLORS'
   - name: facebook-hover
     value: '{!facebook-hover}'
   - name: gplus
@@ -366,6 +386,7 @@ props:
     value: '{!twitter-hover}'
   - name: rgba-dark-50
     value: '{!rgba-dark-50}'
+    comment: 'TRANSPARENT COLORS'
   - name: rgba-dark-70
     value: '{!rgba-dark-70}'
   - name: rgba-dark-30
@@ -388,6 +409,7 @@ props:
     value: '{!rgba-gray94-70}'
   - name: black
     value: '{!black}'
+    comment: 'BLACK AND WHITE'
   - name: white
     value: '{!white}'
 global:

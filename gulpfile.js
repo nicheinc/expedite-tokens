@@ -1,3 +1,4 @@
+const browserSync = require('browser-sync');
 const gulp = require('gulp');
 const theo = require('theo');
 const gulpLoadPlugins = require('gulp-load-plugins');
@@ -63,10 +64,46 @@ gulp.task('color-formats', (done) => {
     done();
 });
 
+function serve(done) {
+    browserSync.init({
+        open: false,
+        notify: false,
+        server: 'docs',
+    });
+    done();
+}
+  
+function reload(done) {
+    browserSync.reload();
+    done();
+}
+
+function watch() {
+    gulp.watch(
+        ['tokens/*.yml'],
+        gulp.series([
+            'positioning-formats',
+            'color-formats',
+        ]),
+    );
+    // For when we are generating docs
+    // gulp.watch('docs/**/*.scss', gulp.series('docs:styles'));
+    gulp.watch(['formats/**/*.*', 'gulpfile.js'], gulp.series($.restart));
+    gulp.watch(['docs/**/*.html'], gulp.series(reload));
+}
+  
+gulp.task(
+    'watch',
+    gulp.series(
+        ['positioning-formats', 'color-formats'],
+        gulp.series(serve, watch),
+    ),
+);
+
 gulp.task(
     'default',
     gulp.series([
-      'positioning-formats',
-      'color-formats',
+        'positioning-formats',
+        'color-formats',
     ]),
   );

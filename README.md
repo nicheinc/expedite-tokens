@@ -1,8 +1,8 @@
 <h1 align="center">Expedite design tokens</h1>
 
-<h3 align="center">Colors, spacing, animation, and typography for all platforms (aspirationally)</h3>
+<h3 align="center">Colors and positioning for all platforms</h3>
 
-<p align="center"><em>JavaScript · JSON · CSS · SCSS</em></p>
+<p align="center"><em>JavaScript · JSON · Less · SCSS · Adobe Swatch · Android XML · Sketch</em></p>
 
 ---
 

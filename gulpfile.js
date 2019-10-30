@@ -11,6 +11,7 @@ theo.registerFormat('sketchpalette', require('./formats/sketchpalette.js'));
 const colorFormats = [
     {transformType: 'web', formatType: 'less'},
     {transformType: 'web', formatType: 'scss'},
+    {transformType: 'web', formatType: 'map.scss'},
     {transformType: 'web', formatType: 'html'},
     {transformType: 'web', formatType: 'json'},
     {transformType: 'web', formatType: 'ase.json'},

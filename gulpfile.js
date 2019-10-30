@@ -5,8 +5,16 @@ const gulpLoadPlugins = require('gulp-load-plugins');
 
 const $ = gulpLoadPlugins();
 
+theo.registerFormat(
+    'spacing-map.scss',
+    require('./formats/spacing-map.scss.js'),
+  );
 theo.registerFormat('ase.json', require('./formats/ase.json.js'));
 theo.registerFormat('sketchpalette', require('./formats/sketchpalette.js'));
+
+const colorFilters = [
+    {transformType: 'web', formatType: 'map.scss'},
+];
 
 const colorFormats = [
     {transformType: 'web', formatType: 'less'},
@@ -25,9 +33,29 @@ const positioningFormats = [
     {transformType: 'web', formatType: 'json'},
 ];
   
+const spacingFormats = [{transformType: 'web', formatType: 'spacing-map.scss'}];
+
 gulp.task('print $', () => {
     console.log($)
 })
+
+gulp.task('spacing-formats', (done) => {
+    spacingFormats.map(({transformType, formatType}) =>
+      gulp
+        .src('tokens/spacing.yml')
+        .pipe(
+          $.theo({
+            transform: {type: transformType, includeMeta: true},
+            format: {type: formatType},
+          }),
+        )
+        .on('error', (err) => {
+          throw new Error(err);
+        })
+        .pipe(gulp.dest('dist')),
+    );
+    done();
+  });
 
 gulp.task('positioning-formats', (done) => {
     positioningFormats.map(({transformType, formatType}) => {
@@ -51,6 +79,24 @@ gulp.task('color-formats', (done) => {
     colorFormats.map(({transformType, formatType}) => {
         return gulp
             .src('tokens/colors.yml')
+            .pipe(
+                $.theo({
+                    transform: {type: transformType, includeMeta: true},
+                    format: {type: formatType},
+                }),
+            )
+            .on('error', (err) => {
+                throw new Error(err);
+            })
+            .pipe(gulp.dest('dist'))
+        });
+    done();
+});
+
+gulp.task('color-filters', (done) => {
+    colorFilters.map(({transformType, formatType}) => {
+        return gulp
+            .src('tokens/color-filters.yml')
             .pipe(
                 $.theo({
                     transform: {type: transformType, includeMeta: true},
@@ -96,7 +142,7 @@ function watch() {
 gulp.task(
     'watch',
     gulp.series(
-        ['positioning-formats', 'color-formats'],
+        ['spacing-formats', 'positioning-formats', 'color-filters', 'color-formats'],
         gulp.series(serve, watch),
     ),
 );
@@ -104,7 +150,9 @@ gulp.task(
 gulp.task(
     'default',
     gulp.series([
+        'spacing-formats',
         'positioning-formats',
         'color-formats',
+        'color-filters',
     ]),
   );

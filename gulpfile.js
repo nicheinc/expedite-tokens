@@ -31,6 +31,22 @@ const webFormats = [
     {transformType: 'web', formatType: 'raw.json'},
 ];
 
+gulp.task('typings', (done) => {
+    gulp
+        .src('tokens/index.yml')
+        .pipe(
+            $.theo({
+                transform: {type: 'web'},
+                format: {type: 'd.ts'},
+            }),
+        )
+        .on('error', (err) => {
+            throw new Error(err);
+        })
+        .pipe(gulp.dest('dist'));
+    done();
+});
+
 gulp.task('web-formats', (done) => {
     webFormats.map(({transformType, formatType}) =>
         gulp
@@ -48,43 +64,7 @@ gulp.task('web-formats', (done) => {
     );
     done();
 });
-
-gulp.task('spacing-formats', (done) => {
-    spacingFormats.map(({transformType, formatType}) =>
-      gulp
-        .src('tokens/spacing.yml')
-        .pipe(
-          $.theo({
-            transform: {type: transformType, includeMeta: true},
-            format: {type: formatType},
-          }),
-        )
-        .on('error', (err) => {
-          throw new Error(err);
-        })
-        .pipe(gulp.dest('dist')),
-    );
-    done();
-  });
-
-// gulp.task('positioning-formats', (done) => {
-//     positioningFormats.map(({transformType, formatType}) => {
-//         return gulp
-//             .src('tokens/positioning.yml')
-//             .pipe(
-//                 $.theo({
-//                     transform: {type: transformType, includeMeta: true},
-//                     format: {type: formatType},
-//                 }),
-//             )
-//             .on('error', (err) => {
-//                 throw new Error(err);
-//             })
-//             .pipe(gulp.dest('dist'))
-//         });
-//     done();
-// });
-
+  
 gulp.task('color-formats', (done) => {
     colorFormats.map(({transformType, formatType}) => {
         return gulp
@@ -144,5 +124,6 @@ gulp.task(
     gulp.series([
         'web-formats',
         'color-formats',
+        'typings',
     ]),
   );

@@ -9,35 +9,45 @@ theo.registerFormat(
     'spacing-map.scss',
     require('./formats/spacing-map.scss.js'),
   );
+theo.registerFormat('color-map.scss', require('./formats/color-map.scss.js'));
 theo.registerFormat('ase.json', require('./formats/ase.json.js'));
 theo.registerFormat('sketchpalette', require('./formats/sketchpalette.js'));
-
-const colorFilters = [
-    {transformType: 'web', formatType: 'map.scss'},
-];
+theo.registerFormat('d.ts', require('./formats/d.ts'));
 
 const colorFormats = [
-    {transformType: 'web', formatType: 'less'},
-    {transformType: 'web', formatType: 'scss'},
-    {transformType: 'web', formatType: 'map.scss'},
     {transformType: 'web', formatType: 'html'},
-    {transformType: 'web', formatType: 'json'},
     {transformType: 'web', formatType: 'ase.json'},
     {transformType: 'android', formatType: 'android.xml'},
     {transformType: 'web', formatType: 'sketchpalette'},
 ];
-
-const positioningFormats = [
+  
+const webFormats = [
     {transformType: 'web', formatType: 'less'},
     {transformType: 'web', formatType: 'scss'},
+    {transformType: 'web', formatType: 'map.scss'},
     {transformType: 'web', formatType: 'json'},
+    {transformType: 'web', formatType: 'common.js'},
+    {transformType: 'web', formatType: 'custom-properties.css'},
+    {transformType: 'web', formatType: 'raw.json'},
 ];
-  
-const spacingFormats = [{transformType: 'web', formatType: 'spacing-map.scss'}];
 
-gulp.task('print $', () => {
-    console.log($)
-})
+gulp.task('web-formats', (done) => {
+    webFormats.map(({transformType, formatType}) =>
+        gulp
+            .src('tokens/*.yml')
+            .pipe(
+                $.theo({
+                    transform: {type: transformType},
+                    format: {type: formatType},
+                }),
+            )
+            .on('error', (err) => {
+                throw new Error(err);
+            })
+            .pipe(gulp.dest('dist')),
+    );
+    done();
+});
 
 gulp.task('spacing-formats', (done) => {
     spacingFormats.map(({transformType, formatType}) =>
@@ -57,46 +67,28 @@ gulp.task('spacing-formats', (done) => {
     done();
   });
 
-gulp.task('positioning-formats', (done) => {
-    positioningFormats.map(({transformType, formatType}) => {
-        return gulp
-            .src('tokens/positioning.yml')
-            .pipe(
-                $.theo({
-                    transform: {type: transformType, includeMeta: true},
-                    format: {type: formatType},
-                }),
-            )
-            .on('error', (err) => {
-                throw new Error(err);
-            })
-            .pipe(gulp.dest('dist'))
-        });
-    done();
-});
+// gulp.task('positioning-formats', (done) => {
+//     positioningFormats.map(({transformType, formatType}) => {
+//         return gulp
+//             .src('tokens/positioning.yml')
+//             .pipe(
+//                 $.theo({
+//                     transform: {type: transformType, includeMeta: true},
+//                     format: {type: formatType},
+//                 }),
+//             )
+//             .on('error', (err) => {
+//                 throw new Error(err);
+//             })
+//             .pipe(gulp.dest('dist'))
+//         });
+//     done();
+// });
 
 gulp.task('color-formats', (done) => {
     colorFormats.map(({transformType, formatType}) => {
         return gulp
             .src('tokens/colors.yml')
-            .pipe(
-                $.theo({
-                    transform: {type: transformType, includeMeta: true},
-                    format: {type: formatType},
-                }),
-            )
-            .on('error', (err) => {
-                throw new Error(err);
-            })
-            .pipe(gulp.dest('dist'))
-        });
-    done();
-});
-
-gulp.task('color-filters', (done) => {
-    colorFilters.map(({transformType, formatType}) => {
-        return gulp
-            .src('tokens/color-filters.yml')
             .pipe(
                 $.theo({
                     transform: {type: transformType, includeMeta: true},
@@ -142,7 +134,7 @@ function watch() {
 gulp.task(
     'watch',
     gulp.series(
-        ['spacing-formats', 'positioning-formats', 'color-filters', 'color-formats'],
+        ['web-formats', 'color-formats'],
         gulp.series(serve, watch),
     ),
 );
@@ -150,9 +142,7 @@ gulp.task(
 gulp.task(
     'default',
     gulp.series([
-        'spacing-formats',
-        'positioning-formats',
+        'web-formats',
         'color-formats',
-        'color-filters',
     ]),
   );

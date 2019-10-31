@@ -20,9 +20,13 @@ The recommended way to use and install design tokens may vary depending on your 
 
 ## Usage
 
+To run the gulp process:
+
 ```
-git clone 
-git cd
+git clone https://github.com/nicheinc/expedite-tokens.git
+git cd expedite-tokens
+npm i
+npm run dist
 ```
 
 ---

@@ -16,11 +16,14 @@ Design tokens originated at Salesforce, and the best way to describe them is to 
 
 Expedite design tokens are only available from this GitHub repository.
 
-The recommended way to use and install design tokens may vary depending on your project; 
+The recommended way to use and install design tokens may vary depending on your project, but since the built output is available in this repo you can add this repo directly to your `package.json`.
 
 ## Usage
 
-Coming soon...
+```
+git clone 
+git cd
+```
 
 ---
 

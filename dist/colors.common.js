@@ -144,5 +144,5 @@ module.exports = {
   rgbaGray9470: "rgba(240, 240, 240, 0.7)",
   /* BLACK AND WHITE */
   black: "rgb(0, 0, 0)",
-  white: "rgb(255, 255, 255)"
+  white: "rgb(255, 255, 255)",
 };

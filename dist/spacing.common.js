@@ -5,5 +5,5 @@ module.exports = {
   spacingBaseTight: "12px",
   spacingBase: "16px",
   spacingLoose: "20px",
-  spacingExtraLoose: "32px"
+  spacingExtraLoose: "32px",
 };

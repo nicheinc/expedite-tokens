@@ -9,5 +9,5 @@ module.exports = {
   zIndex7: "700",
   zIndex8: "800",
   zIndex9: "900",
-  zIndex10: "1000"
+  zIndex10: "1000",
 };

@@ -4,5 +4,5 @@ module.exports = {
   durationBase: "200ms",
   durationSlow: "300ms",
   durationSlower: "400ms",
-  durationSlowest: "500ms"
+  durationSlowest: "500ms",
 };

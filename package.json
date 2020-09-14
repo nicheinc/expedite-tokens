@@ -1,6 +1,6 @@
 {
-  "name": "expedite-tokens",
-  "version": "0.2.0",
+  "name": "@nicheinc/expedite-tokens",
+  "version": "0.3.0",
   "description": "Design Tokens for the Niche Design System",
   "main": "index.js",
   "types": "dist/index.d.ts",
@@ -56,5 +56,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }

@@ -101,7 +101,7 @@ function watch() {
     gulp.watch(
         ['tokens/*.yml'],
         gulp.series([
-            'positioning-formats',
+            // 'positioning-formats', // AssertionError [ERR_ASSERTION]: Task never defined: positioning-formats - SeanMcP
             'color-formats',
         ]),
     );

@@ -36,6 +36,8 @@ This project follows semantic versioning of `MAJOR.MINOR.PATCH`.  Changes to tok
 
 If you need to publish a package during development, you should use the `-beta` modifier.  For example, if the current version of `expedite-tokens` is `1.2.0` and you are working on a branch that you expect to become `1.3.0`, you may publish a package as `1.3.0-beta1` in order to share your work with others.  DO NOT publish `1.3.0` during development.  Once your work is accepted and merged to `master`, it will be published as `1.3.0` and a release will be announced on GitHub.
 
+We also _may_ try to keep this in sync with versioning in Niche's internal Figma.  Currently `expedite-react v1.2.0` aligns with `expedite v0.2` in Figma.
+
 ### Code of conduct
 
 Coming soon...

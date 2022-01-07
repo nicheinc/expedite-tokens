@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessColors.mjs",
-    "prepublish": "npm run build"
+    "prepublish": "npm i --package-lock-only && npm run build"
   },
   "author": "Niche",
   "license": "MIT",

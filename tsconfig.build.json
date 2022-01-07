@@ -1,0 +1,15 @@
+{
+  // "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "declarationDir": "./dist",
+    "jsx": "react",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "tokens"
+  ]
+}

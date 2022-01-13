@@ -1,6 +1,6 @@
 {
   "name": "@nicheinc/expedite-tokens",
-  "version": "1.2.0-beta5",
+  "version": "1.0.0",
   "description": "Design Tokens for the Expedite Design System",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

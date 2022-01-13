@@ -1,10 +1,4 @@
-<h1 align="center">Expedite design tokens</h1>
-
-<h3 align="center">Colors and positioning for all platforms</h3>
-
-<p align="center"><em>JavaScript · JSON · Less · SCSS · Adobe Swatch · Android XML · Sketch</em></p>
-
----
+<h1 align="center">Expedite Design Tokens</h1>
 
 [Design tokens](https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421) for Expedite, Niche's design system.
 
@@ -14,30 +8,35 @@ Design tokens originated at Salesforce, and the best way to describe them is to 
 
 ## Installation
 
-Expedite design tokens are only available from this GitHub repository.
-
-The recommended way to use and install design tokens may vary depending on your project, but since the built output is available in this repo you can add this repo directly to your `package.json`.
-
+`npm install @nicheinc/expedite-tokens`
 ## Usage
 
-To run the gulp process:
+Tokens are packaged in various ways for various clients.
 
+Using Expedite Colors in a `JavaScript` file
+
+```javascript
+import { colors } from '@nicheinc/expedite-tokens'
+const myColor = colors.green100
 ```
-git clone https://github.com/nicheinc/expedite-tokens.git
-git cd expedite-tokens
-npm i
-npm run dist
+
+Using Expedite Colors in a `.less` file
+```less
+@import '~@nicheinc/expedite-tokens/dist/colors/colors.less';
+.myClass {
+    background: @green100;
+}
 ```
 
 ---
 
 ## Contributing
+### Versioning
+This project follows semantic versioning of `MAJOR.MINOR.PATCH`.  Changes to tokens should trigger at least a minor version bump.  Tweaks to how the project is laid out that do not affect clients may simply bump the patch value.
 
-The purpose of this repository is to see the core design elements of the Expedite design system
-evolve and improve over time with the needs of developers, designers and partners in mind.
+If you need to publish a package during development, you should use the `-beta` modifier.  For example, if the current version of `expedite-tokens` is `1.2.0` and you are working on a branch that you expect to become `1.3.0`, you may publish a package as `1.3.0-beta1` in order to share your work with others.  DO NOT publish `1.3.0` during development.  Once your work is accepted and merged to `master`, it will be published as `1.3.0` and a release will be announced on GitHub.
 
-We gratefully accept impromptu contributions to the documentation, typo and bug fixes,
-and expect design token requests and changes to be discussed before a pull request.
+We also _may_ try to keep this in sync with versioning in Niche's internal Figma.  Currently `expedite-react v1.2.0` aligns with `expedite v0.2` in Figma.
 
 ### Code of conduct
 
@@ -50,9 +49,3 @@ Coming soon...
 ### License
 
 The expedite-tokens project is available under the MIT license.
-
-Parts of the code in this repository are directly inspired or borrowed
-from the [Theo project](https://github.com/salesforce-ux/theo),
-property of Salesforce.com, Inc., [licensed under BSD 3-Clause](https://git.io/sfdc-license),
-and also the [Polaris project](https://github.com/Shopify/polaris-react), 
-property of Shopify, Inc.

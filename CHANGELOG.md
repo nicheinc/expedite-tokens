@@ -20,7 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ---
 ## [1.1.0] - 2022-01-14
 ### Changed
-- Made `colors.ts` export a named const to avoid confusing renaming of default export later.  This not affect external interfaces.
+- Made `colors.ts` export a named const to avoid confusing renaming of default export later.  This does not affect external interfaces.
 - Changed `generateLessColors.mjs` to `generateLessTokens.mjs`.  It is generic enough to generate colors and shadows, at least.
 ### Added
 - `shadows.ts` (Shadows from Expedite v0.2)

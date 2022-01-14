@@ -1,6 +1,6 @@
 {
   "name": "@nicheinc/expedite-tokens",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Design Tokens for the Expedite Design System",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
     "expedite"
   ],
   "scripts": {
-    "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessColors.mjs",
+    "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessTokens.mjs",
     "prepublish": "npm i --package-lock-only && npm run build"
   },
   "author": "Niche",

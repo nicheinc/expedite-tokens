@@ -17,7 +17,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
--
+---
+## [1.1.0] - 2022-01-14
+### Changed
+- Made `colors.ts` export a named const to avoid confusing renaming of default export later.  This does not affect external interfaces.
+- Changed `generateLessColors.mjs` to `generateLessTokens.mjs`.  It is generic enough to generate colors and shadows, at least.
+### Added
+- `shadows.ts` (Shadows from Expedite v0.2)
+### Removed
+- `/dist/` from git
+
+---
 ## [1.0.0] - 2022-01-13
 ### Changed
 - Restart the project with simplicity in mind

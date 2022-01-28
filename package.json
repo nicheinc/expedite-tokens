@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessTokens.mjs",
-    "prepublish": "npm i --package-lock-only && npm run build"
+    "prepublishOnly": "npm i --package-lock-only && npm run build"
   },
   "author": "Niche",
   "license": "MIT",

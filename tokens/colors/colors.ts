@@ -23,7 +23,7 @@ export const colors = {
     warm200: '#F3E9E3',
     warm300: '#EDDACE',
     warm400: '#DDC4B3',
-    warm500: '#CEAE98',
+    warm500: '#D2AD94',
     red100: '#FFF1EF',
     red200: '#F8E1DE',
     red300: '#EFC9C1',

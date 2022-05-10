@@ -18,6 +18,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ---
+## [1.2.0] - 2022-02-21
+### Added
+ - `breakpoints.ts` based on Expedite v0.5 breakpoints
+---
 ## [1.1.1] - 2022-02-21
 ### Changed
  - The value of `warm500` from `#CEAE98` to `#D2AD94`.  Releasing this as a patch update since nothing depends on warm500 yet.

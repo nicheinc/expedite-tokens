@@ -29,6 +29,6 @@ console.log('Starting to generate .less version of breakpoints.ts...')
 writeJsObjectToLessFile({
     jsObject: breakpoints,
     outPath: `${__dirname}/dist/breakpoints/breakpoints.less`,
-    transform: value => `~'only screen and (min-width: ${value})'`,
+    transform: value => `~'only screen and (min-width: ${value}px)'`,
 })
 console.log('Finished generating .less version of breakpoints.ts...')

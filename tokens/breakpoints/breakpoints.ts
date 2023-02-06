@@ -6,4 +6,4 @@ export const breakpoints = {
     breakpoint_1200: 1200,
     breakpoint_1440: 1440,
     breakpoint_1800: 1800,
-}
+} as const

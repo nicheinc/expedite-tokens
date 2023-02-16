@@ -19,4 +19,4 @@ export const shadows = {
         '0px 64px 136px rgba(0, 0, 0, 0.1), 0px 32px 64px rgba(0, 0, 0, 0.06), 0px 6px 24px rgba(0, 0, 0, 0.08), 0px 0px 8px rgba(0, 0, 0, 0.02), 0px -2px 2px rgba(0, 0, 0, 0.02)',
     blackShadow600:
         '0px 32px 136px rgba(0, 0, 0, 0.12), 0px 24px 64px rgba(0, 0, 0, 0.08), 0px 6px 24px rgba(0, 0, 0, 0.08), 0px 0px 8px rgba(0, 0, 0, 0.02), 0px 0px 2px rgba(0, 0, 0, 0.02)',
-}
+} as const

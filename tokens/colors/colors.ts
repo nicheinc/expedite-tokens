@@ -65,4 +65,4 @@ export const colors = {
     pink400: '#FF90E7',
     orange400: '#FF5B00',
     royal400: '#8CA6FF',
-}
+} as const

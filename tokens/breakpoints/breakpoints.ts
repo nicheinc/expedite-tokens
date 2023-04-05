@@ -1,6 +1,5 @@
 export const breakpoints = {
     breakpoint_base: 0,
-    breakpoint_360: 360,
     breakpoint_500: 500,
     breakpoint_768: 768,
     breakpoint_960: 960,

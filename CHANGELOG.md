@@ -18,8 +18,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ---
+## [1.3.0] - 2023-04-06
 ### Added
  - `360px` breakpoint
+---
 ## [1.2.1] - 2023-02-16
 ### Changed
  - Typed all token constants using TypeScript const assertions.

@@ -19,7 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 ## [2.0.0]
 ### Added
- - Added the following colors: `pink100`, `pink200`, `pink300`, `pink500`, `pink600`, `orange100`, `orange200`, `orange300`, `orange500`, `orange600`, `royal100`, `royal200`, `royal300`, `royal500`, `royal600`, `royal700`
+ - Added the following colors: `pink100`, `pink200`, `pink300`, `pink500`, `pink600`, `orange100`, `orange200`, `orange300`, `orange400`, `orange500`, `orange600`, `royal100`, `royal200`, `royal300`, `royal500`, `royal600`, `royal700`
 
 ### Changed
   - Changed the value of the following colors: `yellow500`, `pink400`, `orange400`, `royal400`

@@ -17,9 +17,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
+---
+## [2.1.0]
 ### Changed
   - Updated the node version to `16.14.2` 
   - Updated the npm version to `8.5.0`
+---
 ## [2.0.0]
 ### Added
  - Added the following colors: `pink100`, `pink200`, `pink300`, `pink500`, `pink600`, `orange100`, `orange200`, `orange300`, `orange400`, `orange500`, `orange600`, `royal100`, `royal200`, `royal300`, `royal500`, `royal600`, `royal700`

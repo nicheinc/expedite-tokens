@@ -12,7 +12,7 @@
   "scripts": {
     "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessTokens.mjs",
     "prepublishOnly": "npm i --package-lock-only && npm run build",
-    "lint": "node ./node_modules/eslint/bin/eslint.js --ext .js,.mjs,.jsx,.ts,.tsx --config .eslintrc.js --fix ./scripts ./tokens"
+    "lint": "node ./node_modules/eslint/bin/eslint.js --ext .js,.mjs,.jsx,.ts,.tsx --config .eslintrc.js --fix ./scripts ./tokens",
   },
   "author": "Niche",
   "license": "MIT",

@@ -10,5 +10,4 @@
     "source.fixAll.eslint": "explicit"
   },
   "files.eol": "\n",
-  "colorWheel.settings.workspaceColor": "hsl(234,75%,43%)",
 }

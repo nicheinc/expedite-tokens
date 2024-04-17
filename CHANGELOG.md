@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
+### Changed 
+  - Support between 16.14.2 and 20.12.2 versions of node in .nvmrc
+  - Update all other dependencies to the latest versions
 ---
 ## [2.1.0]
 ### Changed

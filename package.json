@@ -1,43 +1,47 @@
 {
-  "name": "@nicheinc/expedite-tokens",
-  "version": "2.2.0",
-  "description": "Design Tokens for the Expedite Design System",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "keywords": [
-    "niche",
-    "design-tokens",
-    "expedite"
-  ],
-  "scripts": {
-    "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessTokens.mjs",
-    "prepublishOnly": "npm i --package-lock-only && npm run build",
-    "lint": "node ./node_modules/eslint/bin/eslint.js --ext .js,.mjs,.jsx,.ts,.tsx --config .eslintrc.js --fix ./scripts ./tokens"
-  },
-  "author": "Niche",
-  "license": "MIT",
-  "homepage": "https://github.com/nicheinc/expedite-tokens#readme",
-  "bugs": {
-    "url": "https://github.com/nicheinc/expedite-tokens/issues"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.7.0",
-    "@typescript-eslint/parser": "^7.7.0",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-progress": "^0.0.1",
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.5"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "files": [
-    "dist"
-  ],
-  "engines": {
-    "node": ">=16.14.2 <20.12.2",
-    "npm": ">=8.5.0 <10.0.0"
-  }
+    "author": "Niche",
+    "bugs": {
+        "url": "https://github.com/nicheinc/expedite-tokens/issues"
+    },
+    "description": "Design Tokens for the Expedite Design System",
+    "devDependencies": {
+        "@eslint/js": "^9.18.0",
+        "@typescript-eslint/eslint-plugin": "^8.19.1",
+        "@typescript-eslint/parser": "^8.19.1",
+        "eslint": "^9.17.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-file-progress": "^3.0.1",
+        "eslint-plugin-prettier": "^5.2.1",
+        "globals": "^15.14.0",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.20.0"
+    },
+    "engines": {
+        "node": ">=16.14.2 <=22.13.0",
+        "npm": ">=8.5.0 <=11.0.0"
+    },
+    "files": [
+        "dist"
+    ],
+    "homepage": "https://github.com/nicheinc/expedite-tokens#readme",
+    "keywords": [
+        "niche",
+        "design-tokens",
+        "expedite"
+    ],
+    "license": "MIT",
+    "main": "dist/index.js",
+    "name": "@nicheinc/expedite-tokens",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
+    "scripts": {
+        "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessTokens.js",
+        "prepublishOnly": "npm i --package-lock-only && npm run build",
+        "lint": "eslint --fix"
+    },
+    "type": "module",
+    "types": "dist/index.d.ts",
+    "version": "2.2.0"
 }

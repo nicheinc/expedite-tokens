@@ -31,13 +31,14 @@ export default [
                 },
                 project: './tsconfig.json',
             },
-            sourceType: 'module',
+            // sourceType: 'module',
         },
         plugins: {
             '@typescript-eslint': typescriptEslintPlugin,
         },
         rules: {
             '@typescript-eslint/indent': 'off',
+            '@typescript-eslint/no-require-imports': 'off',
         },
     },
 ]

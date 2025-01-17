@@ -1,8 +1,8 @@
-import * as fs from 'fs'
-import { breakpoints, colors, shadows } from '../dist/index.js'
-import path from 'path'
+const fs = require('fs')
+const tokens = require('../dist/index.js')
+const path = require('path')
 
-const __dirname = path.resolve(),
+const dirname = path.resolve(),
     writeJsObjectToLessFile = ({ jsObject, outPath, transform }) => {
         const outFileLines = []
         outFileLines.push('// THIS FILE WAS AUTOMATICALLY GENERATED')
@@ -16,17 +16,17 @@ const __dirname = path.resolve(),
     }
 
 console.log('Starting to generate .less version of colors.ts...')
-writeJsObjectToLessFile({ jsObject: colors, outPath: `${__dirname}/dist/colors/colors.less` })
+writeJsObjectToLessFile({ jsObject: tokens.colors, outPath: `${dirname}/dist/colors/colors.less` })
 console.log('Finished generating .less version of colors.ts...')
 
 console.log('Starting to generate .less version of shadows.ts...')
-writeJsObjectToLessFile({ jsObject: shadows, outPath: `${__dirname}/dist/shadows/shadows.less` })
+writeJsObjectToLessFile({ jsObject: tokens.shadows, outPath: `${dirname}/dist/shadows/shadows.less` })
 console.log('Finished generating .less version of shadows.ts...')
 
 console.log('Starting to generate .less version of breakpoints.ts...')
 writeJsObjectToLessFile({
-    jsObject: breakpoints,
-    outPath: `${__dirname}/dist/breakpoints/breakpoints.less`,
+    jsObject: tokens.breakpoints,
+    outPath: `${dirname}/dist/breakpoints/breakpoints.less`,
     transform: value => `~'only screen and (min-width: ${value}px)'`,
 })
 console.log('Finished generating .less version of breakpoints.ts...')

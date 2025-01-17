@@ -39,9 +39,8 @@
     "scripts": {
         "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessTokens.js",
         "prepublishOnly": "npm i --package-lock-only && npm run build",
-        "lint": "eslint --fix"
+        "lint": "eslint -c eslint.config.mjs --fix"
     },
-    "type": "module",
     "types": "dist/index.d.ts",
-    "version": "2.3.0"
+    "version": "2.4.0-beta0"
 }

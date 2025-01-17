@@ -4,7 +4,7 @@
     "declaration": true,
     "declarationDir": "./dist",
     "jsx": "react",
-    "module": "NodeNext",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "outDir": "dist"
   },

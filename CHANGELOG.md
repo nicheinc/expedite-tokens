@@ -19,13 +19,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+---
+
+## [2.3.0]
+
 ### Changed
 
 - Upgraded dependencies
 - Support up to Node 22.13.0
 - Update linting config and script
-
----
 
 ## [2.2.0]
 

@@ -19,6 +19,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Updated development dependencies, including ESLint 10 and TypeScript 6.
+- Expanded supported runtime/tooling ranges to Node `<=24.13.0` and npm `<=11.9.0`.
+- Added a `check-types` script for TypeScript type-checking.
+- Set `rootDir` in `tsconfig.build.json` to keep build output scoped to the tokens source.
+
+### Security
+
+- Applied npm audit remediations and refreshed the lockfile.
+
 ---
 
 ## [2.4.1]

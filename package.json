@@ -12,9 +12,9 @@
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-file-progress": "^4.0.0",
         "eslint-plugin-prettier": "^5.5.5",
-        "globals": "^15.14.0",
+        "globals": "^17.5.0",
         "prettier": "^3.8.3",
-        "typescript": "^5.7.3",
+        "typescript": "^6.0.2",
         "typescript-eslint": "^8.58.2"
     },
     "engines": {
@@ -38,6 +38,7 @@
     },
     "scripts": {
         "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessTokens.js",
+        "check-types": "tsc --noEmit",
         "prepublishOnly": "npm i --package-lock-only && npm run build",
         "lint": "eslint -c eslint.config.mjs --fix"
     },

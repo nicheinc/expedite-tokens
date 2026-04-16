@@ -6,7 +6,8 @@
     "jsx": "react",
     "module": "CommonJS",
     "esModuleInterop": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "rootDir": "./tokens"
   },
   "include": [
     "tokens"

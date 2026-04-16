@@ -43,5 +43,5 @@
         "lint": "eslint -c eslint.config.mjs --fix"
     },
     "types": "dist/index.d.ts",
-    "version": "2.4.1"
+    "version": "2.5.0"
 }

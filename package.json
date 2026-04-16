@@ -6,16 +6,16 @@
     "description": "Design Tokens for the Expedite Design System",
     "devDependencies": {
         "@eslint/js": "^9.18.0",
-        "@typescript-eslint/eslint-plugin": "^8.19.1",
-        "@typescript-eslint/parser": "^8.19.1",
+        "@typescript-eslint/eslint-plugin": "^8.58.2",
+        "@typescript-eslint/parser": "^8.58.2",
         "eslint": "^9.17.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-file-progress": "^3.0.1",
-        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-prettier": "^5.5.5",
         "globals": "^15.14.0",
-        "prettier": "^3.4.2",
+        "prettier": "^3.8.3",
         "typescript": "^5.7.3",
-        "typescript-eslint": "^8.20.0"
+        "typescript-eslint": "^8.58.2"
     },
     "engines": {
         "node": ">=16.14.2 <=24.13.0",

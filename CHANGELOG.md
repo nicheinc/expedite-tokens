@@ -19,6 +19,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- Upgraded Node to `26.4.0` and npm to `11.18.0`.
+- Relaxed supported runtime/tooling ranges to Node `>=22` and npm `>=11`, dropping EOL versions.
+
+### Security
+
+- Applied npm audit remediations and refreshed the lockfile.
+
 ---
 
 ## [2.5.0]

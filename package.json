@@ -22,7 +22,9 @@
         "npm": ">=11"
     },
     "files": [
-        "dist"
+        "dist",
+        "version.js",
+        "version.d.ts"
     ],
     "homepage": "https://github.com/nicheinc/expedite-tokens#readme",
     "keywords": [
@@ -37,10 +39,11 @@
         "registry": "https://npm.pkg.github.com/"
     },
     "scripts": {
-        "build": "rm -rf ./dist && tsc -p tsconfig.build.json && node ./scripts/generateLessTokens.js",
+        "build": "rm -rf ./dist && node ./scripts/writeVersionFile.js && tsc -p tsconfig.build.json && node ./scripts/generateLessTokens.js",
         "check-types": "tsc --noEmit",
         "prepublishOnly": "npm i --package-lock-only && npm run build",
-        "lint": "eslint -c eslint.config.mjs --fix"
+        "lint": "eslint -c eslint.config.mjs --fix",
+        "version": "node ./scripts/writeVersionFile.js && git add tokens/version.ts"
     },
     "types": "dist/index.d.ts",
     "version": "3.0.0"

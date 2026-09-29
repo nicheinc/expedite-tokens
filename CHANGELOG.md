@@ -19,6 +19,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `version` export with the package's own version string, importable from `@nicheinc/expedite-tokens/version` or from the package root. `tokens/version.ts` is regenerated from `package.json` by `scripts/writeVersionFile.js` on every `npm run build` and `npm version`. (DELTA-4672)
+
 ---
 
 ## [3.0.0]

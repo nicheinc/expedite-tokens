@@ -21,7 +21,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
-- Darkened `gray500` from `#7D7C7C` to `#767575`. `gray500` text on white is now 4.59:1, up from 4.16:1, which meets WCAG 1.4.3 (4.5:1). This fixes placeholder text in Expedite inputs. (DELTA-4726)
+- Darkened `gray500` from `#7D7C7C` to `#767575` so `gray500` text on white meets WCAG 1.4.3 (4.59:1, was 4.16:1). (DELTA-4726)
 
 ---
 
